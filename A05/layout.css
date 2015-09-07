@@ -1,14 +1,15 @@
 header {
     font-size: 25vh;
-    color: yellow;
+    color: red;
     text-align: left;
-    background-color: red;
+    background-color: yellow;
 }
 
 table, th, td {
     width: 100%;
     border: 2px solid blue;
     border-collapse: collapse;
+    color: purple;
 }
 
 a:link {
@@ -42,5 +43,6 @@ form {
 footer {
     font-size: 50px;
     text-align: center;
-    background-color: green;
+    color: white;
+    background-color: black;
 }
