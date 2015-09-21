@@ -36,8 +36,8 @@
       <file leaf-file-name="demo_form.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53103447">
-              <caret line="73" column="44" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.6775862">
+              <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -62,8 +62,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/demo_Form.html" />
-        <option value="$PROJECT_DIR$/demo_form.html" />
         <option value="$PROJECT_DIR$/myScript.js" />
+        <option value="$PROJECT_DIR$/demo_form.html" />
       </list>
     </option>
   </component>
@@ -411,8 +411,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53103447">
-          <caret line="73" column="44" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.6775862">
+          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
           <folding />
         </state>
       </provider>
