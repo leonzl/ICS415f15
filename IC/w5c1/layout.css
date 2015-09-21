@@ -1,0 +1,33 @@
+.page-header {
+    font-size: 50px;
+    line-height: 25vh;
+    color: red;
+    text-align: center;
+    background-color: yellow;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 50px;
+    padding-top: 10px;
+}
+
+body {
+    font-family: 'Bree Serif', serif;
+    font-size: 48px;
+}
+
+table, th, td {
+    width: 100%;
+    border: 1px solid blue;
+    border-collapse: collapse;
+    color: darkslategray;
+}
+
+footer {
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
