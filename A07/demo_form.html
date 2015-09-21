@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>JS Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="http://localhost/ICS415f15/A06/layout.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Form</title>
+</head>
+<body>
+<div id="messages"></div>
+<form name="myForm" action="demo_form.html" onsubmit="return validateForm();" method="get">
+    <div class="form-group">
+        <label for="username">User name: </label>
+        <input type="text" name="name" id="username">
+    </div>
+    <div class="form-group">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div class="form-group">
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+    </div>
+    <div class="form-group">
+        <label for="confirm">Confirm Password: </label>
+        <input type="password" name="confirm" id="confirm">
+    </div>
+    <input type="submit" value="Submit">
+</form>
+</body>
+
+<script>
+    function validateForm(){
+        document.getElementById("username").style.backgroundColor = "";
+        document.getElementById("email").style.backgroundColor = "";
+        document.getElementById("password").style.backgroundColor = "";
+        document.getElementById("confirm").style.backgroundColor = "";
+        document.getElementById("messages").innerHTML = "";
+        var messages = "";
+        var user = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirm = document.getElementById("confirm").value;
+        if (user == "") {
+            messages += "User Name is blank.<br>";
+            document.getElementById("username").style.backgroundColor = "red";
+        }
+        if (email == "") {
+            messages += "Email is blank.<br>";
+            document.getElementById("email").style.backgroundColor = "red";
+        }
+        if (password == "" || confirm == ""){
+            messages += "Create a password and confirm it.<br>";
+            document.getElementById("password").style.backgroundColor = "red";
+            document.getElementById("confirm").style.backgroundColor = "red";
+        }
+        else {
+            if (password != confirm) {
+                messages += "Passwords do not match.<br>";
+                document.getElementById("password").style.backgroundColor = "red";
+                document.getElementById("confirm").style.backgroundColor = "red";
+            }
+        }
+        document.getElementById("messages").innerHTML = messages;
+        return false;
+    }
+</script>
+</html>
+</body>
+</html>
