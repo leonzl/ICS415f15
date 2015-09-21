@@ -17,7 +17,12 @@ function getClasses(elem) {
 
 function addClasses(elem, className) {
     var x = elem[0].className;
-    console.log(x);
+    var y = getClasses(elem);
+    for (var i = 0; i < y.length; i++) {
+        if (y[i] == className ){
+            return false;
+        }
+    }
     if (x == ""){
         elem[0].className = className;
     }
