@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-    <title>JSJQ</title>
+    <title>JSAJAX</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css"
           href="http://localhost/ICS415f15/A06/layout.css">
@@ -13,27 +13,32 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body style="background-image:url(random.jpg)">
-
 <div class= "page-header">
     <header id="header"><i class="fa fa-refresh fa-spin"></i>Welcome<i class="fa fa-refresh fa-spin"></i></header>
 </div>
 
+<div id="gsearch"><iframe src="https://www.wikipedia.org/">
+    <p>Your browser does not support iframes.</p>
+</iframe></div>
+
+<div id="sample"></div>
+
 <div id="links">
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Links</a>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Links</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="http://localhost/ICS415f15/IC/w5c2/JSAJAX.html">Home</a></li>
+                    <li><a href="http://localhost/ICS415f15/IC/w5c2/Forms.html">Forms</a></li>
+                    <li><a href="https://github.com/leonzl/ICS415f15/">My Github</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="http://localhost/ICS415f15/IC/w5c1/JSJQ.html">Home</a></li>
-                <li><a href="http://localhost/ICS415f15/IC/w5c1/Forms.html">Forms</a></li>
-                <li><a href="https://github.com/leonzl/ICS415f15/">My Github</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-    </div>
+    </nav>
+</div>
 
 <div class="table-responsive">
     <table class="table">
@@ -94,19 +99,23 @@
 <script>
     $(document).ready(function(){
         $(".page-header").hover(function(){
-            $("#header").hide("slow");
-        },
+                    $("#header").hide("slow");
+                },
                 function(){
                     $("#header").show("slow");
                 });
 
         $("#links").click(function(){
-            $("#links").fadeToggle(2000);
+            var div = $(".navbar");
+            div.animate({height: '1000px', opacity: '0.4'}, "slow");
+            div.animate({width: '50px', opacity: '0.8'}, "slow");
+            div.animate({height: '50px', opacity: '0.4'}, "slow");
+            div.animate({width: '100vw', opacity: '0.8'}, "slow");
         });
 
         $(".table").hover(function(){
-            $("td").css("color", "yellow");
-        },
+                    $("td").css("color", "yellow");
+                },
                 function(){
                     $("td").css("color", "darkslategray");
                 });
@@ -119,6 +128,14 @@
                     $("footer").css("color", "white");
                     $("footer").css("background-color", "black");
                 });
+
+        $(".page-footer").click(function(){
+            var div = $("footer");
+            div.animate({height: '500px', opacity: '0.4'}, "slow");
+            div.animate({width: '50px', opacity: '0.8'}, "slow");
+            div.animate({height: '50px', opacity: '0.4'}, "slow");
+            div.animate({width: '100vw', opacity: '0.8'}, "slow");
+        });
     });
 </script>
 </body>
