@@ -13,23 +13,11 @@
 <body>
 <form name="myForm" action="JQurls.html" onsubmit="return countURLS();" method="get">
     <div class="form-group">
-        <label for="username">User name: </label>
-        <input type="text" name="name" id="username">
-    </div>
-    <div class="form-group">
-        <label for="email">Email: </label>
-        <input type="email" name="email" id="email">
-    </div>
-    <div class="form-group">
-        <label for="password">Password: </label>
-        <input type="password" name="password" id="password">
-    </div>
-    <div class="form-group">
-        <label for="confirm">Confirm Password: </label>
-        <input type="password" name="confirm" id="confirm">
-    </div>
-    <input type="submit" value="Submit">
+        Enter a URL:
+        <input type="url" name="links">
+    <input type="submit" value="Submit" id="url">
 </form>
+<div id="amount"></div>
 </body>
-<script src="myScript.js"></script>
+<script src="http://localhost/ICS415f15/A08/myScript.js"></script>
 </html>
