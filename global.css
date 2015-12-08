@@ -1,0 +1,102 @@
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../tests/sass/_layout.scss */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: red;
+}
+
+/* line 10, ../tests/sass/_layout.scss */
+html {
+  position: relative;
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 16, ../tests/sass/_layout.scss */
+body {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 100%;
+  color: #ffffff;
+  background-color: #6aa698;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 53px;
+  width: 100%;
+}
+
+/* line 23, ../tests/sass/_layout.scss */
+header {
+  text-align: center;
+  font-size: 300%;
+  color: #ffffff;
+  background-color: #6aa698;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 53px;
+  width: 100%;
+  border-bottom: 2px solid #000000;
+}
+
+/* line 31, ../tests/sass/_layout.scss */
+.main {
+  height: 100%;
+}
+
+/* line 35, ../tests/sass/_layout.scss */
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 64px;
+  width: 100%;
+  background-color: #000000;
+  border-top: 2px solid #6aa698;
+}
+
+div.scroll {
+  overflow: scroll;
+}
