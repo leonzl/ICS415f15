@@ -1,1 +1,0 @@
-{"version":3,"sources":["meteor://💻app/lib/collections/channels.js"],"names":[],"mappings":";;;;;;;;AAAA,QAAQ,GAAG,IAAI,KAAK,CAAC,UAAU,CAAC,UAAU,CAAC,CAAC,+B","file":"/lib/collections/channels.js","sourcesContent":["Channels = new Mongo.Collection(\"channels\");"]}

@@ -1,1 +1,0 @@
-{"head":"","body":"","js":"\nTemplate.__checkName(\"listings\");\nTemplate[\"listings\"] = new Template(\"Template.listings\", (function() {\n  var view = this;\n  return HTML.Raw(\"<!-- CSS IS AUTOMATICALLY BUILT AND LOADED -->\");\n}));\n","bodyAttrs":{}}

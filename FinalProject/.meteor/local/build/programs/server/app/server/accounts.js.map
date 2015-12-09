@@ -1,1 +1,0 @@
-{"version":3,"sources":["meteor://💻app/server/accounts.js"],"names":[],"mappings":";;;;;;;;AAAA,QAAQ,CAAC,MAAM,CAAC;AACf,sBAAqB,EAAE,IAAI;CAC3B,CAAC,CAAC,sE","file":"/server/accounts.js","sourcesContent":["Accounts.config({\n\tsendVerificationEmail: true\n});"]}
