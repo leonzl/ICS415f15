@@ -11,6 +11,7 @@ Meteor.startup(function() {
     name: "members"
   });
 
+  // deactivate lines 15-31 when starting from an empty database
   Factory.define('message', Messages, {
     text: function() {
     	return Fake.sentence();
@@ -24,6 +25,7 @@ Meteor.startup(function() {
     text: function() {
       return Fake.sentence();
     },
+
     user: Meteor.users.findOne()._id,
     timestamp: Date.now(),
   });
